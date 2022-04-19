@@ -2,7 +2,7 @@ export default [
   {
     id: 'c1', 
     ctg_name: {
-        text: 'Свадиба'
+        text: 'Свадибаa'
     },
     data:[
         {
