@@ -12,31 +12,31 @@ export default [
           img: require('./assets/images/products/img-1.png')
         },
         {
-            product_id: 'p1',
+            product_id: 'p2',
             title: 'Сериги',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa explicabo assumenda excepturi quam molestiae in, eligendi repellendus ducimus optio alias, ut beatae eos corrupti! Nulla, sit veritatis quidem nisi quis doloremque laborum, sint ipsum eum veniam molestias earum voluptatibus eius cupiditate esse voluptatem velit mollitia, fugiat animi fugit quos natus.',
             img: require('./assets/images/products/img-2.png')
         },
         {
-            product_id: 'p1',
+            product_id: 'p3',
             title: 'Подвески',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa explicabo assumenda excepturi quam molestiae in, eligendi repellendus ducimus optio alias, ut beatae eos corrupti! Nulla, sit veritatis quidem nisi quis doloremque laborum, sint ipsum eum veniam molestias earum voluptatibus eius cupiditate esse voluptatem velit mollitia, fugiat animi fugit quos natus.',
             img: require('./assets/images/products/img-3.png')
         },                
         {
-            product_id: 'p1',
+            product_id: 'p4',
             title: 'Запонки',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa explicabo assumenda excepturi quam molestiae in, eligendi repellendus ducimus optio alias, ut beatae eos corrupti! Nulla, sit veritatis quidem nisi quis doloremque laborum, sint ipsum eum veniam molestias earum voluptatibus eius cupiditate esse voluptatem velit mollitia, fugiat animi fugit quos natus.',
             img: require('./assets/images/products/img-4.png')
         },
         {
-            product_id: 'p1',
+            product_id: 'p5',
             title: 'Браслети',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa explicabo assumenda excepturi quam molestiae in, eligendi repellendus ducimus optio alias, ut beatae eos corrupti! Nulla, sit veritatis quidem nisi quis doloremque laborum, sint ipsum eum veniam molestias earum voluptatibus eius cupiditate esse voluptatem velit mollitia, fugiat animi fugit quos natus.',
             img: require('./assets/images/products/img-5.jpg')
         },        
         {
-            product_id: 'p1',
+            product_id: 'p6',
             title: 'Часи',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa explicabo assumenda excepturi quam molestiae in, eligendi repellendus ducimus optio alias, ut beatae eos corrupti! Nulla, sit veritatis quidem nisi quis doloremque laborum, sint ipsum eum veniam molestias earum voluptatibus eius cupiditate esse voluptatem velit mollitia, fugiat animi fugit quos natus.',
             img: require('./assets/images/products/img-6.png')
