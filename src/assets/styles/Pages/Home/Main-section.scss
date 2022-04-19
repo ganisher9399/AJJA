@@ -1,0 +1,33 @@
+@import '../../components/vars.scss';
+@import '../../components/_mixins';
+
+
+.main-section {
+    width: 100%;
+    min-height: 100vh;
+    background: url('../../../assets/images/layout/main-bg.jpg') no-repeat center / cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    // min-width: 100vh;
+    text-align: center;
+    .content{
+        margin-bottom: 80px;
+        @include md{
+            margin-bottom: 50px;
+        }
+        .main-title{
+            font-size: 36px;
+            font-family: 'Noto', sans-serif;
+            color: $white;
+            margin-bottom: 50px;
+            @include md{
+                font-size: 25px;
+                margin-bottom: 30px;
+            }
+
+        }
+    }
+}
