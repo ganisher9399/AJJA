@@ -12,6 +12,11 @@ const routes = [
     name: 'Blog',
     component: () => import('../views/Blog/index.vue'),
   },
+  {
+    path: '/post/:postId',
+    name: 'Post',
+    component: () => import('../views/Blog/components/BlogPost.vue'),
+  },  
 ]
 
 const router = createRouter({

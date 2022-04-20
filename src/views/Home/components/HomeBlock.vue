@@ -3,9 +3,14 @@
        <div class="container">
            <Title :sub="subtitle" :title="title"/>
            <div class="wrapper">
-               <BlogCard title="Hello world for every one hey!" :img="require('@/assets/images/block/r-1.png')" />
-               <BlogCard title="Hello world for every one hey!" :img="require('@/assets/images/block/r-2.png')" />
-               <BlogCard title="Hello world for every one hey!" :img="require('@/assets/images/block/r-3.png')" />
+               <BlogCard 
+               v-for="item in cutBlogArray" 
+               :key="item.id" 
+               :title="item.title" 
+               :img="item.img" 
+               @click="$router.push({name: 'Post', params: {postId: item.id} })"
+               />
+
            </div>
            <Button @click="$router.push({name: 'Blog'})" >{{ btn_text }}</Button>
         </div> 
@@ -18,6 +23,7 @@
 import Title from '@/layouts/Title.vue'
 import Button from '@/layouts/Button.vue'
 import BlogCard from '@/layouts/BlogCard.vue'
+import BlogPosts from '@/blog_posts.js'
 
 export default {
     components: {
@@ -31,9 +37,21 @@ export default {
             title: 'Лучшие цовети по подбору дорогих подарков',
             text: '',
             btn_text: 'читати наш блог',
-            img: '../../../assets/images/block/r-1.png'
+            img: '../../../assets/images/block/r-1.png',
+            blog_array: BlogPosts,
        }
-    }    
+    },
+    computed: {
+       cutBlogArray(){
+           return this.blog_array.slice(this.getRandomArray, this.getRandomArray+3);
+       },
+       getRandomArray(){
+           const max = BlogPosts.length - 3
+           const min = 0
+           return Math.floor(Math.random() * (max - min) + min)
+           
+       }
+    }   
 }
 </script>
 

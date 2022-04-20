@@ -33,12 +33,23 @@ export default {
     background-position: center;
     cursor: pointer;
     background-color: #ececec;
+    position: relative;
     //media
     @include xl{
        width: 290px;
        height: 310px;
     }
-
+     
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(180, 180, 180, 0) 0%, rgb(62, 42, 42) 100%);
+    }
+    
     .title{
         max-width: 210px;
         text-align: center;
@@ -46,6 +57,8 @@ export default {
         line-height: 30px;
         color: $white;
         font-weight: 400;
+        position: relative;
+        z-index: 3;
     }
 }    
 </style>
