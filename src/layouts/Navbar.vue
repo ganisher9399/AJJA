@@ -73,7 +73,7 @@ export default {
   data() {
     return {
       isMobile: false,
-      isOpen: true,
+      isOpen: false,
       logoImage: require('../assets/images/logos/logo.png'),  
       menuArray: [
         {
