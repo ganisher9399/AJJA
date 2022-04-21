@@ -4,6 +4,8 @@
     <Event />
     <Salons />
     <HomeBlock />
+    <VidoPlear />
+    <SendMail />
   </div>
 </template>
 
@@ -14,6 +16,8 @@ import MainSection from './components/Main-section.vue'
 import Event from './components/Event.vue'
 import Salons from './components/Salons.vue'
 import HomeBlock from './components/HomeBlock.vue'
+import VidoPlear from './components/VidoPlear.vue'
+import SendMail from './components/SendMail.vue'
 
 export default {
     components: {
@@ -21,6 +25,8 @@ export default {
         Event,
         Salons,
         HomeBlock,
+        VidoPlear,
+        SendMail,
     }
 }
 </script>
