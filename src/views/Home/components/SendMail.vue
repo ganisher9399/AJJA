@@ -8,9 +8,9 @@
                    <li><a href=""><i class="fas fa-sign-in"></i>используется</a></li>
                    <li><a href=""><i class="fas fa-sign-in"></i>нопка Submit</a></li>
                </ul>
-               <form>
-                   <input type="text" placeholder="Text......">
-                   <Button>Отправит</Button>
+               <form @submit.prevent="sendMail">
+                   <input type="text" placeholder="Text......" v-model="message">
+                   <Button type="submit">Sends</Button>
                </form>
            </div>
       </div>
@@ -30,7 +30,13 @@ export default {
   data(){
     return{
       subtitlevido: 'формы на сервер используется кнопка Submit',
-      title: 'Область не ограничена'
+      title: 'Область не ограничена',
+      message: '',
+    }
+  },
+  methods: {
+    sendMail(){
+        console.log(this.message);
     }
   }     
    
@@ -65,7 +71,7 @@ export default {
                    width: 220px;
                    height: 50px;
                    padding: 0 15px;
-                   font-size: 17px;
+                   font-size: 18px;
                    border: 1px solid $border_color;
                }
            }
